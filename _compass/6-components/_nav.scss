@@ -1,0 +1,17 @@
+.nav {
+	width: percentage(1/1);
+	@include media(small) {
+		width: auto;
+	}
+}
+.nav__link {
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: rhythm(.075);
+	padding: 0 rhythm(1) rhythm(.5) 0;	
+	@include box-sizing(border-box);
+	width: percentage(1/2);
+	@include media(small) {
+		width: auto;
+	}
+}

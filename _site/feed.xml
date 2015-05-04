@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wings of Healing</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 04 May 2015 17:49:51 -0400</pubDate>
+    <lastBuildDate>Mon, 04 May 2015 17:49:51 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Test</title>
+        <description></description>
+        <pubDate>Tue, 20 Jan 2015 13:20:27 -0500</pubDate>
+        <link>/portfolio/eleven-eleven.html</link>
+        <guid isPermaLink="true">/portfolio/eleven-eleven.html</guid>
+        
+        <category>{&quot;product&quot;=&gt;&quot;Brochure&quot;}</category>
+        
+        <category>{&quot;product&quot;=&gt;&quot;Print&quot;}</category>
+        
+        
+        <category>portfolio</category>
+        
+      </item>
+    
+  </channel>
+</rss>

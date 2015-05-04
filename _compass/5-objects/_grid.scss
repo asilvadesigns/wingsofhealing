@@ -1,0 +1,10 @@
+[class^="container"] {
+	margin: 0 auto;
+	padding: 0 $gutter;
+	max-width: $container__width;
+	min-width: 320px;
+	@include box-sizing(border-box);
+}
+.container--large {
+	max-width: $container--large__width;
+}

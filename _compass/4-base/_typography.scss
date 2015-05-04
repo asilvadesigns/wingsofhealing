@@ -1,0 +1,32 @@
+@include establish-baseline;
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, .h1 {
+	@include adjust-font-size-to($h1);
+}
+h2, .h2 {
+	@include adjust-font-size-to($h2);
+}
+h3, .h3 {
+	@include adjust-font-size-to($h3);
+}
+h4, .h4 {
+	@include adjust-font-size-to($h4);
+}
+h5, .h5 {
+	@include adjust-font-size-to($h5);
+}
+h6, .h6 {
+	@include adjust-font-size-to($h6);
+}
+
+.heading + p {
+	@include margin-leader(1);
+}
+
+p, ul, ol {
+	@include margin-trailer(1);
+}

@@ -1,0 +1,168 @@
+/* line 4, ../_compass/3-generic/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 25, ../_compass/3-generic/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../_compass/3-generic/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 50, ../_compass/3-generic/_reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 106, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.333em;
+}
+
+/* line 3, ../_compass/4-base/_typography.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 7, ../_compass/4-base/_typography.scss */
+h1, .h1 {
+  font-size: 3.157em;
+  line-height: 1.26671em;
+}
+
+/* line 10, ../_compass/4-base/_typography.scss */
+h2, .h2 {
+  font-size: 2.369em;
+  line-height: 1.12537em;
+}
+
+/* line 13, ../_compass/4-base/_typography.scss */
+h3, .h3 {
+  font-size: 1.777em;
+  line-height: 1.50028em;
+}
+
+/* line 16, ../_compass/4-base/_typography.scss */
+h4, .h4 {
+  font-size: 1.333em;
+  line-height: 1.5em;
+}
+
+/* line 19, ../_compass/4-base/_typography.scss */
+h5, .h5 {
+  font-size: 1em;
+  line-height: 1.333em;
+}
+
+/* line 22, ../_compass/4-base/_typography.scss */
+h6, .h6 {
+  font-size: 0.75em;
+  line-height: 1.77733em;
+}
+
+/* line 26, ../_compass/4-base/_typography.scss */
+.heading + p {
+  margin-top: 1.333em;
+}
+
+/* line 30, ../_compass/4-base/_typography.scss */
+p, ul, ol {
+  margin-bottom: 1.333em;
+}
+
+/* line 1, ../_compass/5-objects/_grid.scss */
+[class^="container"] {
+  margin: 0 auto;
+  padding: 0 1.333em;
+  max-width: 30em;
+  min-width: 320px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../_compass/5-objects/_grid.scss */
+.container--large {
+  max-width: 60em;
+}
+
+/* line 1, ../_compass/5-objects/_site.scss */
+.site__header, .site__footer {
+  padding-top: 1.333em;
+}
+/* line 3, ../_compass/5-objects/_site.scss */
+.site__header > div, .site__header .nav, .site__footer > div, .site__footer .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 1, ../_compass/6-components/_nav.scss */
+.nav {
+  width: 100%;
+}
+@media screen and (min-width: 30em) {
+  /* line 1, ../_compass/6-components/_nav.scss */
+  .nav {
+    width: auto;
+  }
+}
+
+/* line 7, ../_compass/6-components/_nav.scss */
+.nav__link {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.09998em;
+  padding: 0 1.333em 0.6665em 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 30em) {
+  /* line 7, ../_compass/6-components/_nav.scss */
+  .nav__link {
+    width: auto;
+  }
+}
+
+/* line 4, ../_compass/6-components/_logo.scss */
+.logo__link {
+  display: inline-block;
+  padding: 0 1.333em 0.6665em 0;
+}

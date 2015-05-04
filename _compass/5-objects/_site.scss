@@ -1,0 +1,14 @@
+.site__header, .site__footer {
+	@include padding-leader(1);
+	> div, .nav {
+		@include flexbox;
+		@include flex-flow(row wrap);
+		@include justify-content(space-between);
+	}
+}
+.site__hero {
+	
+}
+.site__footer {
+	
+}
