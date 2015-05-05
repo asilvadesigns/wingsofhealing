@@ -23,7 +23,7 @@ h6, .h6 {
 	@include adjust-font-size-to($h6);
 }
 
-.heading + p {
+.heading + p, .heading + ul {
 	@include margin-leader(1);
 }
 

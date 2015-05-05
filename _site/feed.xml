@@ -5,23 +5,25 @@
     <description></description>
     <link>/wingsofhealing/</link>
     <atom:link href="/wingsofhealing/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 May 2015 11:35:10 -0400</pubDate>
-    <lastBuildDate>Tue, 05 May 2015 11:35:10 -0400</lastBuildDate>
+    <pubDate>Tue, 05 May 2015 12:24:59 -0400</pubDate>
+    <lastBuildDate>Tue, 05 May 2015 12:24:59 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Test</title>
+        <title>Hello World</title>
         <description></description>
-        <pubDate>Tue, 20 Jan 2015 13:20:27 -0500</pubDate>
-        <link>/wingsofhealing/portfolio/eleven-eleven.html</link>
-        <guid isPermaLink="true">/wingsofhealing/portfolio/eleven-eleven.html</guid>
+        <pubDate>Tue, 05 May 2015 14:20:27 -0400</pubDate>
+        <link>/wingsofhealing/blog/eleven-eleven.html</link>
+        <guid isPermaLink="true">/wingsofhealing/blog/eleven-eleven.html</guid>
         
-        <category>{&quot;product&quot;=&gt;&quot;Brochure&quot;}</category>
+        <category>{&quot;tag&quot;=&gt;&quot;tag1&quot;}</category>
         
-        <category>{&quot;product&quot;=&gt;&quot;Print&quot;}</category>
+        <category>{&quot;tag&quot;=&gt;&quot;tag2&quot;}</category>
+        
+        <category>{&quot;tag&quot;=&gt;&quot;tag3&quot;}</category>
         
         
-        <category>portfolio</category>
+        <category>blog</category>
         
       </item>
     

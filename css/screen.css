@@ -37,7 +37,7 @@ a {
   color: inherit;
 }
 
-/* line 106, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 106, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
   line-height: 1.333em;
@@ -85,7 +85,7 @@ h6, .h6 {
 }
 
 /* line 26, ../_compass/4-base/_typography.scss */
-.heading + p {
+.heading + p, .heading + ul {
   margin-top: 1.333em;
 }
 
@@ -144,7 +144,7 @@ p, ul, ol {
 }
 
 /* line 7, ../_compass/6-components/_nav.scss */
-.nav__link {
+[class^="nav__link"] {
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: 0.09998em;
@@ -156,21 +156,26 @@ p, ul, ol {
 }
 @media screen and (min-width: 34em) {
   /* line 7, ../_compass/6-components/_nav.scss */
-  .nav__link {
+  [class^="nav__link"] {
     width: auto;
     padding-bottom: 1.333em;
     padding-right: 0.99975em;
   }
   /* line 17, ../_compass/6-components/_nav.scss */
-  .nav__link:last-child {
+  [class^="nav__link"]:last-child {
     padding-right: 0;
   }
 }
 @media screen and (min-width: 51em) {
   /* line 7, ../_compass/6-components/_nav.scss */
-  .nav__link {
+  [class^="nav__link"] {
     padding-right: 1.66625em;
   }
+}
+
+/* line 27, ../_compass/6-components/_nav.scss */
+.nav__link--active {
+  opacity: .5;
 }
 
 /* line 4, ../_compass/6-components/_logo.scss */

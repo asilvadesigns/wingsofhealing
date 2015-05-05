@@ -4,7 +4,7 @@
 		width: auto;
 	}
 }
-.nav__link {
+[class^="nav__link"] {
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: rhythm(.075);
@@ -22,4 +22,8 @@
 		padding-right: rhythm(1.25);
 	}
 	@include box-sizing(border-box);
+}
+
+.nav__link--active {
+	opacity: .5;
 }
