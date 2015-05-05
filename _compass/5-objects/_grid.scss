@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	padding: 0 $gutter;
 	max-width: $container__width;
-	min-width: 320px;
+	min-width: 280px;
 	@include box-sizing(border-box);
 }
 .container--large {
