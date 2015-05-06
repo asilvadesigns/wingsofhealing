@@ -7,7 +7,7 @@
 	}
 }
 .site__hero {
-	
+    @include padding-leader(2);
 }
 .site__footer {
 	

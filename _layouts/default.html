@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-{% include head.html %}
-
+{% if page.script %}
+    {% include head--calendar.html %}
+{% else %}
+    {% include head.html %}
+{% endif %}
 <body class="{{ page.class }}">
 
 <header class="site__header">
@@ -12,9 +14,15 @@
 </header>
 
 <main class="site__hero">
+    {% if page.container %}
+    <div class="{{ page.container }}">
+        {{ content }}
+    </div>
+    {% else %}
 	<div class="container">
 		{{ content }}
 	</div>
+    {% endif %}
 </main>
 
 <footer class="site__footer">
