@@ -217,8 +217,9 @@ function injectQsComponent(url, component) {
 $(document).ready(function() {
     $('#calendar').fullCalendar({
         googleCalendarApiKey: 'AIzaSyCjJNS_gYTBrabKHhz0NzbROMFSsS2TlGA',
-        events: {
-            googleCalendarId: 'e8fsshoq7oqfi59am41l8t2skg@group.calendar.google.com'
-        }
+        events: 'usa__en@holiday.calendar.google.com',
+        // events: {
+        //     googleCalendarId: 'e8fsshoq7oqfi59am41l8t2skg@group.calendar.google.com'
+        // }
     });
 });

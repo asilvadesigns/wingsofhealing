@@ -205,12 +205,6 @@ p, ul, ol {
   text-align: right;
 }
 
-/* line 17, ../_compass/6-components/_calendar.scss */
-body .fc {
-  /* extra precedence to overcome jqui */
-  font-size: 1em;
-}
-
 /* Colors
 --------------------------------------------------------------------------------------------------*/
 /* line 25, ../_compass/6-components/_calendar.scss */
