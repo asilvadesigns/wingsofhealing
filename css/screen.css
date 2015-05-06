@@ -31,6 +31,12 @@ ol, ul {
   list-style: none;
 }
 
+/* line 43, ../_compass/3-generic/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* line 50, ../_compass/3-generic/_reset.scss */
 a {
   text-decoration: none;
@@ -61,7 +67,7 @@ h2, .h2 {
 }
 
 /* line 13, ../_compass/4-base/_typography.scss */
-h3, .h3 {
+h3, .h3, .fc-toolbar h2 {
   font-size: 1.777em;
   line-height: 1.12521em;
 }
@@ -110,11 +116,7 @@ p, ul, ol {
   max-width: 66.63334em;
 }
 
-/* line 1, ../_compass/5-objects/_site.scss */
-.site__header, .site__footer {
-  padding-top: 1.333em;
-}
-/* line 3, ../_compass/5-objects/_site.scss */
+/* line 2, ../_compass/5-objects/_site.scss */
 .site__header > div, .site__header .nav, .site__footer > div, .site__footer .nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -132,8 +134,18 @@ p, ul, ol {
   justify-content: space-between;
 }
 
-/* line 9, ../_compass/5-objects/_site.scss */
+/* line 8, ../_compass/5-objects/_site.scss */
+.site__header {
+  padding-top: 1.333em;
+}
+
+/* line 11, ../_compass/5-objects/_site.scss */
 .site__hero {
+  padding-top: 2.666em;
+}
+
+/* line 14, ../_compass/5-objects/_site.scss */
+.site__footer {
   padding-top: 2.666em;
 }
 
@@ -203,6 +215,12 @@ p, ul, ol {
 /* line 13, ../_compass/6-components/_calendar.scss */
 .fc-rtl {
   text-align: right;
+}
+
+/* line 17, ../_compass/6-components/_calendar.scss */
+body .fc {
+  /* extra precedence to overcome jqui */
+  font-size: 1em;
 }
 
 /* Colors
@@ -1414,231 +1432,4 @@ be a descendant of the grid when it is being dragged.
 /* line 1059, ../_compass/6-components/_calendar.scss */
 .fc-time-grid-event .fc-resizer:after {
   content: "=";
-}
-
-/*!
- * FullCalendar v2.3.1 Print Stylesheet
- * Docs & License: http://fullcalendar.io/
- * (c) 2015 Adam Shaw
- */
-/*
- * Include this stylesheet on your page to get a more printer-friendly calendar.
- * When including this stylesheet, use the media='print' attribute of the <link> tag.
- * Make sure to include this stylesheet IN ADDITION to the regular fullcalendar.css.
- */
-/* line 1077, ../_compass/6-components/_calendar.scss */
-.fc {
-  max-width: 100% !important;
-}
-
-/* Global Event Restyling
---------------------------------------------------------------------------------------------------*/
-/* line 1085, ../_compass/6-components/_calendar.scss */
-.fc-event {
-  background: #fff !important;
-  color: #000 !important;
-  page-break-inside: avoid;
-}
-
-/* line 1091, ../_compass/6-components/_calendar.scss */
-.fc-event .fc-resizer {
-  display: none;
-}
-
-/* Table & Day-Row Restyling
---------------------------------------------------------------------------------------------------*/
-/* line 1099, ../_compass/6-components/_calendar.scss */
-th,
-td,
-hr,
-thead,
-tbody,
-.fc-row {
-  border-color: #ccc !important;
-  background: #fff !important;
-}
-
-/* kill the overlaid, absolutely-positioned common components */
-/* line 1110, ../_compass/6-components/_calendar.scss */
-.fc-bg,
-.fc-bgevent-skeleton,
-.fc-highlight-skeleton,
-.fc-helper-skeleton {
-  display: none;
-}
-
-/* don't force a min-height on rows (for DayGrid) */
-/* line 1118, ../_compass/6-components/_calendar.scss */
-.fc tbody .fc-row {
-  height: auto !important;
-  /* undo height that JS set in distributeHeight */
-  min-height: 0 !important;
-  /* undo the min-height from each view's specific stylesheet */
-}
-
-/* line 1123, ../_compass/6-components/_calendar.scss */
-.fc tbody .fc-row .fc-content-skeleton {
-  position: static;
-  /* undo .fc-rigid */
-  padding-bottom: 0 !important;
-  /* use a more border-friendly method for this... */
-}
-
-/* line 1128, ../_compass/6-components/_calendar.scss */
-.fc tbody .fc-row .fc-content-skeleton tbody tr:last-child td {
-  /* only works in newer browsers */
-  padding-bottom: 1em;
-  /* ...gives space within the skeleton. also ensures min height in a way */
-}
-
-/* line 1132, ../_compass/6-components/_calendar.scss */
-.fc tbody .fc-row .fc-content-skeleton table {
-  /* provides a min-height for the row, but only effective for IE, which exaggerates this value,
-     making it look more like 3em. for other browers, it will already be this tall */
-  height: 1em;
-}
-
-/* Undo month-view event limiting. Display all events and hide the "more" links
---------------------------------------------------------------------------------------------------*/
-/* line 1142, ../_compass/6-components/_calendar.scss */
-.fc-more-cell,
-.fc-more {
-  display: none !important;
-}
-
-/* line 1147, ../_compass/6-components/_calendar.scss */
-.fc tr.fc-limited {
-  display: table-row !important;
-}
-
-/* line 1151, ../_compass/6-components/_calendar.scss */
-.fc td.fc-limited {
-  display: table-cell !important;
-}
-
-/* line 1155, ../_compass/6-components/_calendar.scss */
-.fc-popover {
-  display: none;
-  /* never display the "more.." popover in print mode */
-}
-
-/* TimeGrid Restyling
---------------------------------------------------------------------------------------------------*/
-/* undo the min-height 100% trick used to fill the container's height */
-/* line 1164, ../_compass/6-components/_calendar.scss */
-.fc-time-grid {
-  min-height: 0 !important;
-}
-
-/* don't display the side axis at all ("all-day" and time cells) */
-/* line 1169, ../_compass/6-components/_calendar.scss */
-.fc-agenda-view .fc-axis {
-  display: none;
-}
-
-/* don't display the horizontal lines */
-/* line 1174, ../_compass/6-components/_calendar.scss */
-.fc-slats,
-.fc-time-grid hr {
-  /* this hr is used when height is underused and needs to be filled */
-  display: none !important;
-  /* important overrides inline declaration */
-}
-
-/* let the container that holds the events be naturally positioned and create real height */
-/* line 1180, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-content-skeleton {
-  position: static;
-}
-
-/* in case there are no events, we still want some height */
-/* line 1185, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-content-skeleton table {
-  height: 4em;
-}
-
-/* kill the horizontal spacing made by the event container. event margins will be done below */
-/* line 1190, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event-container {
-  margin: 0 !important;
-}
-
-/* TimeGrid *Event* Restyling
---------------------------------------------------------------------------------------------------*/
-/* naturally position events, vertically stacking them */
-/* line 1199, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event {
-  position: static !important;
-  margin: 3px 2px !important;
-}
-
-/* for events that continue to a future day, give the bottom border back */
-/* line 1205, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event.fc-not-end {
-  border-bottom-width: 1px !important;
-}
-
-/* indicate the event continues via "..." text */
-/* line 1210, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event.fc-not-end:after {
-  content: "...";
-}
-
-/* for events that are continuations from previous days, give the top border back */
-/* line 1215, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event.fc-not-start {
-  border-top-width: 1px !important;
-}
-
-/* indicate the event is a continuation via "..." text */
-/* line 1220, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event.fc-not-start:before {
-  content: "...";
-}
-
-/* time */
-/* undo a previous declaration and let the time text span to a second line */
-/* line 1227, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event .fc-time {
-  white-space: normal !important;
-}
-
-/* hide the the time that is normally displayed... */
-/* line 1232, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event .fc-time span {
-  display: none;
-}
-
-/* ...replace it with a more verbose version (includes AM/PM) stored in an html attribute */
-/* line 1237, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event .fc-time:after {
-  content: attr(data-full);
-}
-
-/* Vertical Scroller & Containers
---------------------------------------------------------------------------------------------------*/
-/* kill the scrollbars and allow natural height */
-/* line 1246, ../_compass/6-components/_calendar.scss */
-.fc-scroller,
-.fc-day-grid-container,
-.fc-time-grid-container {
-  /* */
-  overflow: visible !important;
-  height: auto !important;
-}
-
-/* kill the horizontal border/padding used to compensate for scrollbars */
-/* line 1254, ../_compass/6-components/_calendar.scss */
-.fc-row {
-  border: 0 !important;
-  margin: 0 !important;
-}
-
-/* Button Controls
---------------------------------------------------------------------------------------------------*/
-/* line 1263, ../_compass/6-components/_calendar.scss */
-.fc-button-group,
-.fc button {
-  display: none;
-  /* don't display any button-related controls */
 }

@@ -218,6 +218,16 @@ $(document).ready(function() {
         googleCalendarApiKey: 'AIzaSyCjJNS_gYTBrabKHhz0NzbROMFSsS2TlGA',
         events: {
             googleCalendarId: 'e8fsshoq7oqfi59am41l8t2skg@group.calendar.google.com'
+        },
+        // header: {
+        //     left: 'prev,next today',
+        //     center: 'title',
+        //     right: 'month,basicWeek,basicDay'
+        // },
+        eventClick: function(event) {
+            // opens events in a popup window
+            window.open(event.url, 'gcalevent');
+            return false;
         }
     });
 });
