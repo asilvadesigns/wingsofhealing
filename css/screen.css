@@ -201,90 +201,13 @@ p, ul, ol {
   padding: 0 1.333em 0.6665em 0;
 }
 
-/*!
- * FullCalendar v2.3.1 Stylesheet
- * Docs & License: http://fullcalendar.io/
- * (c) 2015 Adam Shaw
- */
 /* line 8, ../_compass/6-components/_calendar.scss */
 .fc {
   direction: ltr;
   text-align: left;
 }
 
-/* line 13, ../_compass/6-components/_calendar.scss */
-.fc-rtl {
-  text-align: right;
-}
-
-/* line 17, ../_compass/6-components/_calendar.scss */
-body .fc {
-  /* extra precedence to overcome jqui */
-  font-size: 1em;
-}
-
-/* Colors
---------------------------------------------------------------------------------------------------*/
-/* line 25, ../_compass/6-components/_calendar.scss */
-.fc-unthemed th,
-.fc-unthemed td,
-.fc-unthemed thead,
-.fc-unthemed tbody,
-.fc-unthemed .fc-divider,
-.fc-unthemed .fc-row,
-.fc-unthemed .fc-popover {
-  border-color: #ddd;
-}
-
-/* line 35, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-popover {
-  background-color: #fff;
-}
-
-/* line 39, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-divider,
-.fc-unthemed .fc-popover .fc-header {
-  background: #eee;
-}
-
-/* line 44, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-popover .fc-header .fc-close {
-  color: #666;
-}
-
-/* line 48, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-today {
-  background: #fcf8e3;
-}
-
-/* line 52, ../_compass/6-components/_calendar.scss */
-.fc-highlight {
-  /* when user is selecting cells */
-  background: #bce8f1;
-  opacity: .3;
-  filter: alpha(opacity=30);
-  /* for IE */
-}
-
-/* line 58, ../_compass/6-components/_calendar.scss */
-.fc-bgevent {
-  /* default look for background events */
-  background: #8fdf82;
-  opacity: .3;
-  filter: alpha(opacity=30);
-  /* for IE */
-}
-
-/* line 64, ../_compass/6-components/_calendar.scss */
-.fc-nonbusiness {
-  /* default look for non-business-hours areas */
-  /* will inherit .fc-bgevent's styles */
-  background: #d7d7d7;
-}
-
-/* Icons (inline elements with styled text that mock arrow icons)
---------------------------------------------------------------------------------------------------*/
-/* line 73, ../_compass/6-components/_calendar.scss */
+/* line 77, ../_compass/6-components/_calendar.scss */
 .fc-icon {
   display: inline-block;
   width: 1em;
@@ -296,21 +219,14 @@ body .fc {
   font-family: "Courier New", Courier, monospace;
 }
 
-/*
-Acceptable font-family overrides for individual icons:
-    "Arial", sans-serif
-    "Times New Roman", serif
-
-NOTE: use percentage font sizes or else old IE chokes
-*/
-/* line 92, ../_compass/6-components/_calendar.scss */
+/* line 96, ../_compass/6-components/_calendar.scss */
 .fc-icon:after {
   position: relative;
   margin: 0 -1em;
   /* ensures character will be centered, regardless of width */
 }
 
-/* line 97, ../_compass/6-components/_calendar.scss */
+/* line 101, ../_compass/6-components/_calendar.scss */
 .fc-icon-left-single-arrow:after {
   content: "\02039";
   font-weight: bold;
@@ -319,7 +235,7 @@ NOTE: use percentage font sizes or else old IE chokes
   left: 3%;
 }
 
-/* line 105, ../_compass/6-components/_calendar.scss */
+/* line 109, ../_compass/6-components/_calendar.scss */
 .fc-icon-right-single-arrow:after {
   content: "\0203A";
   font-weight: bold;
@@ -328,308 +244,81 @@ NOTE: use percentage font sizes or else old IE chokes
   left: -3%;
 }
 
-/* line 113, ../_compass/6-components/_calendar.scss */
-.fc-icon-left-double-arrow:after {
-  content: "\000AB";
-  font-size: 160%;
-  top: -7%;
-}
-
-/* line 119, ../_compass/6-components/_calendar.scss */
-.fc-icon-right-double-arrow:after {
-  content: "\000BB";
-  font-size: 160%;
-  top: -7%;
-}
-
-/* line 125, ../_compass/6-components/_calendar.scss */
-.fc-icon-left-triangle:after {
-  content: "\25C4";
-  font-size: 125%;
-  top: 3%;
-  left: -2%;
-}
-
-/* line 132, ../_compass/6-components/_calendar.scss */
-.fc-icon-right-triangle:after {
-  content: "\25BA";
-  font-size: 125%;
-  top: 3%;
-  left: 2%;
-}
-
-/* line 139, ../_compass/6-components/_calendar.scss */
-.fc-icon-down-triangle:after {
-  content: "\25BC";
-  font-size: 125%;
-  top: 2%;
-}
-
-/* line 145, ../_compass/6-components/_calendar.scss */
-.fc-icon-x:after {
-  content: "\000D7";
-  font-size: 200%;
-  top: 6%;
-}
-
-/* Buttons (styled <button> tags, normalized to work cross-browser)
---------------------------------------------------------------------------------------------------*/
-/* line 155, ../_compass/6-components/_calendar.scss */
+/* line 159, ../_compass/6-components/_calendar.scss */
 .fc button {
-  /* force height to include the border and padding */
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* dimensions */
   margin: 0;
   height: 2.1em;
   padding: 0 .6em;
-  /* text & cursor */
   font-size: 1em;
-  /* normalize */
   white-space: nowrap;
   cursor: pointer;
 }
 
-/* Firefox has an annoying inner border */
-/* line 173, ../_compass/6-components/_calendar.scss */
-.fc button::-moz-focus-inner {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 175, ../_compass/6-components/_calendar.scss */
-.fc-state-default {
-  /* non-theme */
-  border: 1px solid;
-}
-
-/* line 179, ../_compass/6-components/_calendar.scss */
-.fc-state-default.fc-corner-left {
-  /* non-theme */
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-/* line 184, ../_compass/6-components/_calendar.scss */
-.fc-state-default.fc-corner-right {
-  /* non-theme */
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-/* icons in buttons */
-/* line 191, ../_compass/6-components/_calendar.scss */
+/* line 199, ../_compass/6-components/_calendar.scss */
 .fc button .fc-icon {
-  /* non-theme */
   position: relative;
-  top: -0.05em;
-  /* seems to be a good adjustment across browsers */
-  margin: 0 .2em;
+  top: -0.07em;
   vertical-align: middle;
 }
 
-/*
-  button states
-  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
-*/
-/* line 203, ../_compass/6-components/_calendar.scss */
-.fc-state-default {
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #333;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* line 218, ../_compass/6-components/_calendar.scss */
-.fc-state-hover,
-.fc-state-down,
-.fc-state-active,
-.fc-state-disabled {
-  color: #333333;
-  background-color: #e6e6e6;
-}
-
-/* line 226, ../_compass/6-components/_calendar.scss */
-.fc-state-hover {
-  color: #333333;
-  text-decoration: none;
-  background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
-  transition: background-position 0.1s linear;
-}
-
-/* line 236, ../_compass/6-components/_calendar.scss */
-.fc-state-down,
-.fc-state-active {
-  background-color: #cccccc;
-  background-image: none;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* line 243, ../_compass/6-components/_calendar.scss */
-.fc-state-disabled {
-  cursor: default;
-  background-image: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  box-shadow: none;
-}
-
-/* Buttons Groups
---------------------------------------------------------------------------------------------------*/
-/* line 255, ../_compass/6-components/_calendar.scss */
-.fc-button-group {
-  display: inline-block;
-}
-
-/*
-every button that is not first in a button group should scootch over one pixel and cover the
-previous button's border...
-*/
-/* line 264, ../_compass/6-components/_calendar.scss */
-.fc .fc-button-group > * {
-  /* extra precedence b/c buttons have margin set to zero */
-  float: left;
-  margin: 0 0 0 -1px;
-}
-
-/* line 269, ../_compass/6-components/_calendar.scss */
-.fc .fc-button-group > :first-child {
-  /* same */
-  margin-left: 0;
-}
-
-/* Popover
---------------------------------------------------------------------------------------------------*/
-/* line 277, ../_compass/6-components/_calendar.scss */
-.fc-popover {
-  position: absolute;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-/* line 282, ../_compass/6-components/_calendar.scss */
-.fc-popover .fc-header {
-  /* TODO: be more consistent with fc-head/fc-body */
-  padding: 2px 4px;
-}
-
-/* line 286, ../_compass/6-components/_calendar.scss */
-.fc-popover .fc-header .fc-title {
-  margin: 0 2px;
-}
-
-/* line 290, ../_compass/6-components/_calendar.scss */
-.fc-popover .fc-header .fc-close {
-  cursor: pointer;
-}
-
-/* line 294, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-popover .fc-header .fc-title,
-.fc-rtl .fc-popover .fc-header .fc-close {
-  float: left;
-}
-
-/* line 299, ../_compass/6-components/_calendar.scss */
-.fc-rtl .fc-popover .fc-header .fc-title,
-.fc-ltr .fc-popover .fc-header .fc-close {
-  float: right;
-}
-
-/* unthemed */
-/* line 306, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-popover {
-  border-width: 1px;
-  border-style: solid;
-}
-
-/* line 311, ../_compass/6-components/_calendar.scss */
-.fc-unthemed .fc-popover .fc-header .fc-close {
-  font-size: .9em;
-  margin-top: 2px;
-}
-
-/* jqui themed */
-/* line 318, ../_compass/6-components/_calendar.scss */
-.fc-popover > .ui-widget-header + .ui-widget-content {
-  border-top: 0;
-  /* where they meet, let the header have the border */
-}
-
-/* Misc Reusable Components
---------------------------------------------------------------------------------------------------*/
-/* line 326, ../_compass/6-components/_calendar.scss */
+/* line 339, ../_compass/6-components/_calendar.scss */
 .fc-divider {
   border-style: solid;
   border-width: 1px;
 }
 
-/* line 331, ../_compass/6-components/_calendar.scss */
+/* line 344, ../_compass/6-components/_calendar.scss */
 hr.fc-divider {
   height: 0;
   margin: 0;
   padding: 0 0 2px;
-  /* height is unreliable across browsers, so use padding */
   border-width: 1px 0;
 }
 
-/* line 338, ../_compass/6-components/_calendar.scss */
+/* line 352, ../_compass/6-components/_calendar.scss */
 .fc-clear {
   clear: both;
 }
 
-/* line 342, ../_compass/6-components/_calendar.scss */
+/* line 356, ../_compass/6-components/_calendar.scss */
 .fc-bg,
 .fc-bgevent-skeleton,
 .fc-highlight-skeleton,
 .fc-helper-skeleton {
-  /* these element should always cling to top-left/right corners */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
 
-/* line 353, ../_compass/6-components/_calendar.scss */
+/* line 368, ../_compass/6-components/_calendar.scss */
 .fc-bg {
   bottom: 0;
-  /* strech bg to bottom edge */
 }
 
-/* line 357, ../_compass/6-components/_calendar.scss */
+/* line 373, ../_compass/6-components/_calendar.scss */
 .fc-bg table {
   height: 100%;
-  /* strech bg to bottom edge */
 }
 
-/* Tables
---------------------------------------------------------------------------------------------------*/
-/* line 365, ../_compass/6-components/_calendar.scss */
+/* line 382, ../_compass/6-components/_calendar.scss */
 .fc table {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 1em;
-  /* normalize cross-browser */
 }
 
-/* line 373, ../_compass/6-components/_calendar.scss */
+/* line 390, ../_compass/6-components/_calendar.scss */
 .fc th {
   text-align: center;
 }
 
-/* line 377, ../_compass/6-components/_calendar.scss */
+/* line 394, ../_compass/6-components/_calendar.scss */
 .fc th,
 .fc td {
   border-style: solid;
@@ -638,413 +327,171 @@ hr.fc-divider {
   vertical-align: top;
 }
 
-/* line 385, ../_compass/6-components/_calendar.scss */
+/* line 402, ../_compass/6-components/_calendar.scss */
 .fc td.fc-today {
   border-style: double;
-  /* overcome neighboring borders */
 }
 
-/* Fake Table Rows
---------------------------------------------------------------------------------------------------*/
-/* line 393, ../_compass/6-components/_calendar.scss */
+/* line 411, ../_compass/6-components/_calendar.scss */
 .fc .fc-row {
-  /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
-  /* no visible border by default. but make available if need be (scrollbar width compensation) */
   border-style: solid;
   border-width: 0;
 }
 
-/* line 399, ../_compass/6-components/_calendar.scss */
+/* line 418, ../_compass/6-components/_calendar.scss */
 .fc-row table {
-  /* don't put left/right border on anything within a fake row.
-     the outer tbody will worry about this */
   border-left: 0 hidden transparent;
   border-right: 0 hidden transparent;
-  /* no bottom borders on rows */
   border-bottom: 0 hidden transparent;
 }
 
-/* line 409, ../_compass/6-components/_calendar.scss */
+/* line 428, ../_compass/6-components/_calendar.scss */
 .fc-row:first-child table {
   border-top: 0 hidden transparent;
-  /* no top border on first row */
 }
 
-/* Day Row (used within the header and the DayGrid)
---------------------------------------------------------------------------------------------------*/
-/* line 417, ../_compass/6-components/_calendar.scss */
+/* line 437, ../_compass/6-components/_calendar.scss */
 .fc-row {
   position: relative;
 }
 
-/* line 421, ../_compass/6-components/_calendar.scss */
+/* line 441, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-bg {
   z-index: 1;
 }
 
-/* highlighting cells & background event skeleton */
-/* line 427, ../_compass/6-components/_calendar.scss */
+/* line 447, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-bgevent-skeleton,
 .fc-row .fc-highlight-skeleton {
   bottom: 0;
-  /* stretch skeleton to bottom of row */
 }
 
-/* line 432, ../_compass/6-components/_calendar.scss */
+/* line 453, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-bgevent-skeleton table,
 .fc-row .fc-highlight-skeleton table {
   height: 100%;
-  /* stretch skeleton to bottom of row */
 }
 
-/* line 437, ../_compass/6-components/_calendar.scss */
+/* line 459, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-highlight-skeleton td,
 .fc-row .fc-bgevent-skeleton td {
   border-color: transparent;
 }
 
-/* line 442, ../_compass/6-components/_calendar.scss */
+/* line 464, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-bgevent-skeleton {
   z-index: 2;
 }
 
-/* line 447, ../_compass/6-components/_calendar.scss */
+/* line 469, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-highlight-skeleton {
   z-index: 3;
 }
 
-/*
-row content (which contains day/week numbers and events) as well as "helper" (which contains
-temporary rendered events).
-*/
-/* line 456, ../_compass/6-components/_calendar.scss */
+/* line 478, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-content-skeleton {
   position: relative;
   z-index: 4;
   padding-bottom: 2px;
-  /* matches the space above the events */
 }
 
-/* line 462, ../_compass/6-components/_calendar.scss */
+/* line 485, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-helper-skeleton {
   z-index: 5;
 }
 
-/* line 466, ../_compass/6-components/_calendar.scss */
+/* line 489, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-content-skeleton td,
 .fc-row .fc-helper-skeleton td {
-  /* see-through to the background below */
   background: none;
-  /* in case <td>s are globally styled */
   border-color: transparent;
-  /* don't put a border between events and/or the day number */
   border-bottom: 0;
 }
 
-/* line 476, ../_compass/6-components/_calendar.scss */
+/* line 500, ../_compass/6-components/_calendar.scss */
 .fc-row .fc-content-skeleton tbody td,
 .fc-row .fc-helper-skeleton tbody td {
-  /* don't put a border between event cells */
   border-top: 0;
 }
 
-/* Scrolling Container
---------------------------------------------------------------------------------------------------*/
-/* line 486, ../_compass/6-components/_calendar.scss */
+/* line 511, ../_compass/6-components/_calendar.scss */
 .fc-scroller {
-  /* this class goes on elements for guaranteed vertical scrollbars */
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 491, ../_compass/6-components/_calendar.scss */
+/* line 517, ../_compass/6-components/_calendar.scss */
 .fc-scroller > * {
-  /* we expect an immediate inner element */
   position: relative;
-  /* re-scope all positions */
   width: 100%;
-  /* hack to force re-sizing this inner element when scrollbars appear/disappear */
-  overflow: hidden;
-  /* don't let negative margins or absolute positioning create further scroll */
-}
-
-/* Global Event Styles
---------------------------------------------------------------------------------------------------*/
-/* line 501, ../_compass/6-components/_calendar.scss */
-.fc-event {
-  position: relative;
-  /* for resize handle and other inner positioning */
-  display: block;
-  /* make the <a> tag block */
-  font-size: .85em;
-  line-height: 1.3;
-  border-radius: 3px;
-  border: 1px solid #3a87ad;
-  /* default BORDER color */
-  background-color: #3a87ad;
-  /* default BACKGROUND color */
-  font-weight: normal;
-  /* undo jqui's ui-widget-header bold */
-}
-
-/* overpower some of bootstrap's and jqui's styles on <a> tags */
-/* line 513, ../_compass/6-components/_calendar.scss */
-.fc-event,
-.fc-event:hover,
-.ui-widget .fc-event {
-  color: #fff;
-  /* default TEXT color */
-  text-decoration: none;
-  /* if <a> has an href */
-}
-
-/* line 520, ../_compass/6-components/_calendar.scss */
-.fc-event[href],
-.fc-event.fc-draggable {
-  cursor: pointer;
-  /* give events with links and draggable events a hand mouse pointer */
-}
-
-/* line 525, ../_compass/6-components/_calendar.scss */
-.fc-not-allowed,
-.fc-not-allowed .fc-event {
-  /* to override an event's custom cursor */
-  cursor: not-allowed;
-}
-
-/* line 530, ../_compass/6-components/_calendar.scss */
-.fc-event .fc-bg {
-  /* the generic .fc-bg already does position */
-  z-index: 1;
-  background: #fff;
-  opacity: .25;
-  filter: alpha(opacity=25);
-  /* for IE */
-}
-
-/* line 537, ../_compass/6-components/_calendar.scss */
-.fc-event .fc-content {
-  position: relative;
-  z-index: 2;
-}
-
-/* line 542, ../_compass/6-components/_calendar.scss */
-.fc-event .fc-resizer {
-  position: absolute;
-  z-index: 3;
-}
-
-/* Horizontal Events
---------------------------------------------------------------------------------------------------*/
-/* events that are continuing to/from another week. kill rounded corners and butt up against edge */
-/* line 553, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-h-event.fc-not-start,
-.fc-rtl .fc-h-event.fc-not-end {
-  margin-left: 0;
-  border-left-width: 0;
-  padding-left: 1px;
-  /* replace the border with padding */
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* line 562, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-h-event.fc-not-end,
-.fc-rtl .fc-h-event.fc-not-start {
-  margin-right: 0;
-  border-right-width: 0;
-  padding-right: 1px;
-  /* replace the border with padding */
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* resizer */
-/* line 573, ../_compass/6-components/_calendar.scss */
-.fc-h-event .fc-resizer {
-  /* positioned it to overcome the event's borders */
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  width: 5px;
-}
-
-/* left resizer  */
-/* line 582, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-h-event .fc-start-resizer,
-.fc-ltr .fc-h-event .fc-start-resizer:before,
-.fc-ltr .fc-h-event .fc-start-resizer:after,
-.fc-rtl .fc-h-event .fc-end-resizer,
-.fc-rtl .fc-h-event .fc-end-resizer:before,
-.fc-rtl .fc-h-event .fc-end-resizer:after {
-  right: auto;
-  /* ignore the right and only use the left */
-  cursor: w-resize;
-}
-
-/* right resizer */
-/* line 593, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-h-event .fc-end-resizer,
-.fc-ltr .fc-h-event .fc-end-resizer:before,
-.fc-ltr .fc-h-event .fc-end-resizer:after,
-.fc-rtl .fc-h-event .fc-start-resizer,
-.fc-rtl .fc-h-event .fc-start-resizer:before,
-.fc-rtl .fc-h-event .fc-start-resizer:after {
-  left: auto;
-  /* ignore the left and only use the right */
-  cursor: e-resize;
-}
-
-/* DayGrid events
-----------------------------------------------------------------------------------------------------
-We use the full "fc-day-grid-event" class instead of using descendants because the event won't
-be a descendant of the grid when it is being dragged.
-*/
-/* line 610, ../_compass/6-components/_calendar.scss */
-.fc-day-grid-event {
-  margin: 1px 2px 0;
-  /* spacing between events and edges */
-  padding: 0 1px;
-}
-
-/* line 616, ../_compass/6-components/_calendar.scss */
-.fc-day-grid-event .fc-content {
-  /* force events to be one-line tall */
-  white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 621, ../_compass/6-components/_calendar.scss */
-.fc-day-grid-event .fc-time {
-  font-weight: bold;
-}
-
-/* line 625, ../_compass/6-components/_calendar.scss */
-.fc-day-grid-event .fc-resizer {
-  /* enlarge the default hit area */
-  left: -3px;
-  right: -3px;
-  width: 7px;
-}
-
-/* Event Limiting
---------------------------------------------------------------------------------------------------*/
-/* "more" link that represents hidden events */
-/* line 637, ../_compass/6-components/_calendar.scss */
-a.fc-more {
-  margin: 1px 3px;
-  font-size: .85em;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* line 644, ../_compass/6-components/_calendar.scss */
-a.fc-more:hover {
-  text-decoration: underline;
-}
-
-/* line 648, ../_compass/6-components/_calendar.scss */
-.fc-limited {
-  /* rows and cells that are hidden because of a "more" link */
-  display: none;
-}
-
-/* popover that appears when "more" link is clicked */
-/* line 654, ../_compass/6-components/_calendar.scss */
-.fc-day-grid .fc-row {
-  z-index: 1;
-  /* make the "more" popover one higher than this */
-}
-
-/* line 658, ../_compass/6-components/_calendar.scss */
-.fc-more-popover {
-  z-index: 2;
-  width: 220px;
-}
-
-/* line 663, ../_compass/6-components/_calendar.scss */
-.fc-more-popover .fc-event-container {
-  padding: 10px;
-}
-
-/* Toolbar
---------------------------------------------------------------------------------------------------*/
-/* line 670, ../_compass/6-components/_calendar.scss */
+/* line 705, ../_compass/6-components/_calendar.scss */
 .fc-toolbar {
   text-align: center;
   margin-bottom: 1em;
 }
 
-/* line 675, ../_compass/6-components/_calendar.scss */
+/* line 710, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-left {
   float: left;
 }
 
-/* line 679, ../_compass/6-components/_calendar.scss */
+/* line 714, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-right {
   float: right;
 }
 
-/* line 683, ../_compass/6-components/_calendar.scss */
+/* line 718, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-center {
   display: inline-block;
 }
 
-/* the things within each left/right/center section */
-/* line 688, ../_compass/6-components/_calendar.scss */
+/* line 723, ../_compass/6-components/_calendar.scss */
 .fc .fc-toolbar > * > * {
-  /* extra precedence to override button border margins */
   float: left;
   margin-left: .75em;
 }
 
-/* the first thing within each left/center/right section */
-/* line 694, ../_compass/6-components/_calendar.scss */
+/* line 730, ../_compass/6-components/_calendar.scss */
 .fc .fc-toolbar > * > :first-child {
-  /* extra precedence to override button border margins */
   margin-left: 0;
 }
 
-/* title text */
-/* line 700, ../_compass/6-components/_calendar.scss */
+/* line 737, ../_compass/6-components/_calendar.scss */
 .fc-toolbar h2 {
   margin: 0;
 }
 
-/* button layering (for border precedence) */
-/* line 706, ../_compass/6-components/_calendar.scss */
+/* line 743, ../_compass/6-components/_calendar.scss */
 .fc-toolbar button {
   position: relative;
 }
 
-/* line 710, ../_compass/6-components/_calendar.scss */
+/* line 747, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-state-hover,
 .fc-toolbar .ui-state-hover {
   z-index: 2;
 }
 
-/* line 715, ../_compass/6-components/_calendar.scss */
+/* line 752, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-state-down {
   z-index: 3;
 }
 
-/* line 719, ../_compass/6-components/_calendar.scss */
+/* line 756, ../_compass/6-components/_calendar.scss */
 .fc-toolbar .fc-state-active,
 .fc-toolbar .ui-state-active {
   z-index: 4;
 }
 
-/* line 724, ../_compass/6-components/_calendar.scss */
+/* line 761, ../_compass/6-components/_calendar.scss */
 .fc-toolbar button:focus {
   z-index: 5;
 }
 
-/* View Structure
---------------------------------------------------------------------------------------------------*/
-/* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
-/* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
-/* line 734, ../_compass/6-components/_calendar.scss */
+/* line 771, ../_compass/6-components/_calendar.scss */
 .fc-view-container *,
 .fc-view-container *:before,
 .fc-view-container *:after {
@@ -1053,383 +500,37 @@ a.fc-more:hover {
   box-sizing: content-box;
 }
 
-/* line 742, ../_compass/6-components/_calendar.scss */
+/* line 779, ../_compass/6-components/_calendar.scss */
 .fc-view,
 .fc-view > table {
-  /* so dragged elements can be above the view's main element */
   position: relative;
   z-index: 1;
 }
 
-/* BasicView
---------------------------------------------------------------------------------------------------*/
-/* day row structure */
-/* line 753, ../_compass/6-components/_calendar.scss */
-.fc-basicWeek-view .fc-content-skeleton,
-.fc-basicDay-view .fc-content-skeleton {
-  /* we are sure there are no day numbers in these views, so... */
-  padding-top: 1px;
-  /* add a pixel to make sure there are 2px padding above events */
-  padding-bottom: 1em;
-  /* ensure a space at bottom of cell for user selecting/clicking */
-}
-
-/* line 760, ../_compass/6-components/_calendar.scss */
-.fc-basic-view .fc-body .fc-row {
-  min-height: 4em;
-  /* ensure that all rows are at least this tall */
-}
-
-/* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
-/* line 766, ../_compass/6-components/_calendar.scss */
-.fc-row.fc-rigid {
-  overflow: hidden;
-}
-
-/* line 770, ../_compass/6-components/_calendar.scss */
-.fc-row.fc-rigid .fc-content-skeleton {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-/* week and day number styling */
-/* line 779, ../_compass/6-components/_calendar.scss */
-.fc-basic-view .fc-week-number,
-.fc-basic-view .fc-day-number {
-  padding: 0 2px;
-}
-
-/* line 784, ../_compass/6-components/_calendar.scss */
-.fc-basic-view td.fc-week-number span,
-.fc-basic-view td.fc-day-number {
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-/* line 790, ../_compass/6-components/_calendar.scss */
-.fc-basic-view .fc-week-number {
-  text-align: center;
-}
-
-/* line 794, ../_compass/6-components/_calendar.scss */
-.fc-basic-view .fc-week-number span {
-  /* work around the way we do column resizing and ensure a minimum width */
-  display: inline-block;
-  min-width: 1.25em;
-}
-
-/* line 800, ../_compass/6-components/_calendar.scss */
+/* line 839, ../_compass/6-components/_calendar.scss */
 .fc-ltr .fc-basic-view .fc-day-number {
   text-align: right;
 }
 
-/* line 804, ../_compass/6-components/_calendar.scss */
-.fc-rtl .fc-basic-view .fc-day-number {
-  text-align: left;
-}
-
-/* line 808, ../_compass/6-components/_calendar.scss */
+/* line 847, ../_compass/6-components/_calendar.scss */
 .fc-day-number.fc-other-month {
   opacity: 0.3;
   filter: alpha(opacity=30);
-  /* for IE */
-  /* opacity with small font can sometimes look too faded
-     might want to set the 'color' property instead
-     making day-numbers bold also fixes the problem */
 }
 
-/* AgendaView all-day area
---------------------------------------------------------------------------------------------------*/
-/* line 819, ../_compass/6-components/_calendar.scss */
+/* line 859, ../_compass/6-components/_calendar.scss */
 .fc-agenda-view .fc-day-grid {
   position: relative;
   z-index: 2;
-  /* so the "more.." popover will be over the time grid */
-}
-
-/* line 824, ../_compass/6-components/_calendar.scss */
-.fc-agenda-view .fc-day-grid .fc-row {
-  min-height: 3em;
-  /* all-day section will never get shorter than this */
-}
-
-/* line 828, ../_compass/6-components/_calendar.scss */
-.fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
-  padding-top: 1px;
-  /* add a pixel to make sure there are 2px padding above events */
-  padding-bottom: 1em;
-  /* give space underneath events for clicking/selecting days */
-}
-
-/* TimeGrid axis running down the side (for both the all-day area and the slot area)
---------------------------------------------------------------------------------------------------*/
-/* line 837, ../_compass/6-components/_calendar.scss */
-.fc .fc-axis {
-  /* .fc to overcome default cell styles */
-  vertical-align: middle;
-  padding: 0 4px;
-  white-space: nowrap;
-}
-
-/* line 843, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-axis {
-  text-align: right;
-}
-
-/* line 847, ../_compass/6-components/_calendar.scss */
-.fc-rtl .fc-axis {
-  text-align: left;
-}
-
-/* line 851, ../_compass/6-components/_calendar.scss */
-.ui-widget td.fc-axis {
-  font-weight: normal;
-  /* overcome jqui theme making it bold */
-}
-
-/* TimeGrid Structure
---------------------------------------------------------------------------------------------------*/
-/* line 859, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-container,
-.fc-time-grid {
-  /* so slats/bg/content/etc positions get scoped within here */
-  position: relative;
-  z-index: 1;
 }
 
 /* line 865, ../_compass/6-components/_calendar.scss */
-.fc-time-grid {
-  min-height: 100%;
-  /* so if height setting is 'auto', .fc-bg stretches to fill height */
+.fc-agenda-view .fc-day-grid .fc-row {
+  min-height: 3em;
 }
 
-/* line 869, ../_compass/6-components/_calendar.scss */
-.fc-time-grid table {
-  /* don't put outer borders on slats/bg/content/etc */
-  border: 0 hidden transparent;
-}
-
-/* line 873, ../_compass/6-components/_calendar.scss */
-.fc-time-grid > .fc-bg {
-  z-index: 1;
-}
-
-/* line 877, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-slats,
-.fc-time-grid > hr {
-  /* the <hr> AgendaView injects when grid is shorter than scroller */
-  position: relative;
-  z-index: 2;
-}
-
-/* line 883, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-bgevent-skeleton,
-.fc-time-grid .fc-content-skeleton {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-/* line 891, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-bgevent-skeleton {
-  z-index: 3;
-}
-
-/* line 895, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-highlight-skeleton {
-  z-index: 4;
-}
-
-/* line 899, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-content-skeleton {
-  z-index: 5;
-}
-
-/* line 903, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-helper-skeleton {
-  z-index: 6;
-}
-
-/* TimeGrid Slats (lines that run horizontally)
---------------------------------------------------------------------------------------------------*/
-/* line 911, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-slats td {
-  height: 1.5em;
-  border-bottom: 0;
-  /* each cell is responsible for its top border */
-}
-
-/* line 916, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-slats .fc-minor td {
-  border-top-style: dotted;
-}
-
-/* line 920, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-slats .ui-widget-content {
-  /* for jqui theme */
-  background: none;
-  /* see through to fc-bg */
-}
-
-/* TimeGrid Highlighting Slots
---------------------------------------------------------------------------------------------------*/
-/* line 928, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-highlight-container {
-  /* a div within a cell within the fc-highlight-skeleton */
-  position: relative;
-  /* scopes the left/right of the fc-highlight to be in the column */
-}
-
-/* line 932, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  /* top and bottom will be in by JS */
-}
-
-/* TimeGrid Event Containment
---------------------------------------------------------------------------------------------------*/
-/* line 943, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event-container,
-.fc-time-grid .fc-bgevent-container {
-  /* a div within a cell within the fc-bgevent-skeleton */
-  position: relative;
-}
-
-/* line 948, ../_compass/6-components/_calendar.scss */
-.fc-ltr .fc-time-grid .fc-event-container {
-  /* space on the sides of events for LTR (default) */
-  margin: 0 2.5% 0 2px;
-}
-
-/* line 952, ../_compass/6-components/_calendar.scss */
-.fc-rtl .fc-time-grid .fc-event-container {
-  /* space on the sides of events for RTL */
-  margin: 0 2px 0 2.5%;
-}
-
-/* line 956, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-event,
-.fc-time-grid .fc-bgevent {
-  position: absolute;
-  z-index: 1;
-  /* scope inner z-index's */
-}
-
-/* line 962, ../_compass/6-components/_calendar.scss */
-.fc-time-grid .fc-bgevent {
-  /* background events always span full width */
-  left: 0;
-  right: 0;
-}
-
-/* Generic Vertical Event
---------------------------------------------------------------------------------------------------*/
-/* line 972, ../_compass/6-components/_calendar.scss */
-.fc-v-event.fc-not-start {
-  /* events that are continuing from another day */
-  /* replace space made by the top border with padding */
-  border-top-width: 0;
+/* line 870, ../_compass/6-components/_calendar.scss */
+.fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
   padding-top: 1px;
-  /* remove top rounded corners */
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-/* line 982, ../_compass/6-components/_calendar.scss */
-.fc-v-event.fc-not-end {
-  /* replace space made by the top border with padding */
-  border-bottom-width: 0;
-  padding-bottom: 1px;
-  /* remove bottom rounded corners */
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* TimeGrid Event Styling
-----------------------------------------------------------------------------------------------------
-We use the full "fc-time-grid-event" class instead of using descendants because the event won't
-be a descendant of the grid when it is being dragged.
-*/
-/* line 999, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event {
-  overflow: hidden;
-  /* don't let the bg flow over rounded corners */
-}
-
-/* line 1003, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event .fc-time,
-.fc-time-grid-event .fc-title {
-  padding: 0 1px;
-}
-
-/* line 1008, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event .fc-time {
-  font-size: .85em;
-  white-space: nowrap;
-}
-
-/* short mode, where time and title are on the same line */
-/* line 1015, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-content {
-  /* don't wrap to second line (now that contents will be inline) */
-  white-space: nowrap;
-}
-
-/* line 1020, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-time,
-.fc-time-grid-event.fc-short .fc-title {
-  /* put the time and title on the same line */
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* line 1027, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-time span {
-  display: none;
-  /* don't display the full time text... */
-}
-
-/* line 1031, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-time:before {
-  content: attr(data-start);
-  /* ...instead, display only the start time */
-}
-
-/* line 1035, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-time:after {
-  content: "\000A0-\000A0";
-  /* seperate with a dash, wrapped in nbsp's */
-}
-
-/* line 1039, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event.fc-short .fc-title {
-  font-size: .85em;
-  /* make the title text the same size as the time */
-  padding: 0;
-  /* undo padding from above */
-}
-
-/* resizer */
-/* line 1046, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event .fc-resizer {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 8px;
-  overflow: hidden;
-  line-height: 8px;
-  font-size: 11px;
-  font-family: monospace;
-  text-align: center;
-  cursor: s-resize;
-}
-
-/* line 1059, ../_compass/6-components/_calendar.scss */
-.fc-time-grid-event .fc-resizer:after {
-  content: "=";
+  padding-bottom: 1em;
 }
