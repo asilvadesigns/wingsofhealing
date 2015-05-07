@@ -219,11 +219,11 @@ $(document).ready(function() {
         events: {
             googleCalendarId: 'e8fsshoq7oqfi59am41l8t2skg@group.calendar.google.com'
         },
-        // header: {
-        //     left: 'prev,next today',
-        //     center: 'title',
-        //     right: 'month,basicWeek,basicDay'
-        // },
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,basicWeek,basicDay'
+        },
         eventClick: function(event) {
             // opens events in a popup window
             window.open(event.url, 'gcalevent');
