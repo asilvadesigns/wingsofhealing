@@ -74,16 +74,16 @@
 // /* Icons (inline elements with styled text that mock arrow icons)
 // --------------------------------------------------------------------------------------------------*/
 
-.fc-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    line-height: 1em;
-    font-size: 1em;
-    text-align: center;
-    overflow: hidden;
-    font-family: "Courier New", Courier, monospace;
-}
+// .fc-icon {
+//     display: inline-block;
+//     // width: 1em;
+//     // height: 1em;
+//     // line-height: 1em;
+//     // font-size: 1em;
+//     // text-align: center;
+//     // overflow: hidden;
+//     // font-family: "Courier New", Courier, monospace;
+// }
 
 // /*
 // Acceptable font-family overrides for individual icons:
@@ -93,25 +93,27 @@
 // NOTE: use percentage font sizes or else old IE chokes
 // */
 
-.fc-icon:after {
-    position: relative;
-    margin: 0 -1em; /* ensures character will be centered, regardless of width */
-}
+// .fc-icon:after {
+//     position: relative;
+//     // margin: 0 -1em; /* ensures character will be centered, regardless of width */
+// }
 
 .fc-icon-left-single-arrow:after {
-    content: "\02039";
-    font-weight: bold;
-    font-size: 200%;
-    top: -7%;
-    left: 3%;
+    content: "Prev";
+    // content: "\02039";
+    // font-weight: bold;
+    // font-size: 200%;
+    // top: -7%;
+    // left: 3%;
 }
 
 .fc-icon-right-single-arrow:after {
-    content: "\0203A";
-    font-weight: bold;
-    font-size: 200%;
-    top: -7%;
-    left: -3%;
+    content: "Next";
+    // content: "\0203A";
+    // font-weight: bold;
+    // font-size: 200%;
+    // top: -7%;
+    // left: -3%;
 }
 
 // .fc-icon-left-double-arrow:after {
@@ -157,21 +159,22 @@
 // --------------------------------------------------------------------------------------------------*/
 
 .fc button {
+    text-transform: capitalize;
     // force height to include the border and padding
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -webkit-box-sizing: border-box;
+    // box-sizing: border-box;
 
     // dimensions
-    margin: 0;
-    height: 2.1em;
-    padding: 0 .6em;
+    // margin: 0;
+    // height: 2.1em;
+    // padding: 0 .6em;
 
     // text & cursor
-    font-size: 1em; 
+    // font-size: 1em; 
     // normalize
-    white-space: nowrap;
-    cursor: pointer;
+    // white-space: nowrap;
+    // cursor: pointer;
 }
 
 // /* Firefox has an annoying inner border */
@@ -196,14 +199,14 @@
 
 // /* icons in buttons */
 
-.fc button .fc-icon { 
-    // non-theme
-    position: relative;
-    top: -0.07em; 
-    // seems to be a good adjustment across browsers
-    // margin: 0 .2em;
-    vertical-align: middle;
-}
+// .fc button .fc-icon { 
+//     // non-theme
+//     // position: relative;
+//     // top: -0.07em; 
+//     // seems to be a good adjustment across browsers
+//     // margin: 0 .2em;
+//     // vertical-align: middle;
+// }
     
 // /*
 //   button states
@@ -262,9 +265,9 @@
 // /* Buttons Groups
 // --------------------------------------------------------------------------------------------------*/
 
-// .fc-button-group {
-//     display: inline-block;
-// }
+.fc-button-group {
+    display: inline-block;
+}
 
 // /*
 // every button that is not first in a button group should scootch over one pixel and cover the
@@ -384,19 +387,20 @@ hr.fc-divider {
     table-layout: fixed;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 1em;
-}
-
-.fc th {
-    text-align: center;
+    // font-size: 1em;
 }
 
 .fc th,
 .fc td {
-    border-style: solid;
-    border-width: 1px;
+    // border-style: solid;
+    // border-width: 1px;
     padding: 0;
     vertical-align: top;
+}
+
+.fc th {
+    // text-align: center;
+    padding-bottom: rhythm(1);
 }
 
 .fc td.fc-today {
@@ -704,45 +708,56 @@ hr.fc-divider {
 
 .fc-toolbar {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: rhythm(1);
 }
 
-.fc-toolbar .fc-left {
+.fc-toolbar {
     float: left;
+    .fc-left, .fc-right, .fc-center {
+        display: inline-block;
+    }
+    button {
+        margin-left: rhythm(1);
+    }
 }
 
-.fc-toolbar .fc-right {
-    float: right;
-}
+// .fc-toolbar .fc-left {
+//     float: left;
+// }
 
-.fc-toolbar .fc-center {
-    display: inline-block;
-}
+// .fc-toolbar .fc-right {
+//     float: right;
+// }
+
+// .fc-toolbar .fc-center {
+//     display: inline-block;
+// }
 
 // the things within each left/right/center section
 .fc .fc-toolbar > * > * { 
     // extra precedence to override button border margins
-    float: left;
-    margin-left: .75em;
+    // float: left;
+    // margin-left: .75em;
+    display: inline-block;
 }
 
 // the first thing within each left/center/right section
-.fc .fc-toolbar > * > :first-child { 
-    // extra precedence to override button border margins
-    margin-left: 0;
-}
+// .fc .fc-toolbar > * > :first-child { 
+//     // extra precedence to override button border margins
+//     margin-left: 0;
+// }
     
 // title text
 
-.fc-toolbar h2 {
-    margin: 0;
-}
+// .fc-toolbar h2 {
+//     margin: 0;
+// }
 
 // button layering (for border precedence)
 
-.fc-toolbar button {
-    position: relative;
-}
+// .fc-toolbar button {
+//     position: relative;
+// }
 
 .fc-toolbar .fc-state-hover,
 .fc-toolbar .ui-state-hover {
@@ -774,6 +789,12 @@ hr.fc-divider {
     -webkit-box-sizing: content-box;
        -moz-box-sizing: content-box;
             box-sizing: content-box;
+}
+
+.fc-view-container:before {
+    clear: both;
+    content: "";
+    display: block;
 }
 
 .fc-view, 
@@ -836,9 +857,9 @@ hr.fc-divider {
 //     min-width: 1.25em;
 // }
 
-.fc-ltr .fc-basic-view .fc-day-number {
-    text-align: right;
-}
+// .fc-ltr .fc-basic-view .fc-day-number {
+//     text-align: right;
+// }
 
 // .fc-rtl .fc-basic-view .fc-day-number {
 //     text-align: left;
@@ -1110,4 +1131,13 @@ hr.fc-divider {
 
 // .fc-time-grid-event .fc-resizer:after {
 //     content: "=";
+// }
+
+
+// .fc-ltr .fc-basic-view .fc-day-number {
+//     padding: rhythm(.5) rhythm(.5) 0 0;
+// }
+
+// .fc-content {
+//     padding: 0 rhythm(.5);
 // }

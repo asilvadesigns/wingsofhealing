@@ -220,8 +220,8 @@ $(document).ready(function() {
             googleCalendarId: 'e8fsshoq7oqfi59am41l8t2skg@group.calendar.google.com'
         },
         header: {
-            left: 'prev,next today',
-            center: 'title',
+            left: 'title',
+            center: 'prev,next today',
             right: 'month,basicWeek,basicDay'
         },
         eventClick: function(event) {
